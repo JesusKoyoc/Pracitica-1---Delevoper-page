@@ -1,0 +1,21 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+/* Comentatios*/
+/* Hace referencia a las clases*/
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+
+}
+
+/* Editar espeificamente la palabra delevoper*/
+.titulo span {
+    font-size: 2rem;
+}
