@@ -8,7 +8,7 @@
 
 }
 
-
+/* llama a un elemento o etiqueta de HTML */
 html {
     font-size: 62.5%;
 }
@@ -16,6 +16,30 @@ html {
 body {
     font-size: 16px;
 }
+
+/* Se aplica desde 0 pixeles */
+body {
+    background-color: bisque;
+}
+
+/* Recomendado 
+480 para moviles
+768 para tables
+*/
+
+@media (min-width: 480px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: cornflowerblue;
+    }
+}
+
+
 
 /* Comentatios*/
 /* Hace referencia a las clases*/
@@ -42,7 +66,18 @@ body {
     justify-content: space-between;
     font-weight: bold;
     font-size: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
+
+@media (min-width: 768px) {
+    .navegcion-principal {
+        flex-direction: row; /* alinear en filas */
+        justify-content: space-between;
+
+    }
+}
+
 
 .navegcion-principal a {
     color: var(--blanco);
@@ -58,7 +93,7 @@ body {
 } 
 
 .contenedor {
-    width: 120rem; /* 1200 pixeles porque 1 rem = 10 px. Unidad de medida*/
+    max-width: 120rem; /* 1200 pixeles porque 1 rem = 10 px. Unidad de medida*/
     /* margin-top: 0
     margin-bottom: 0
     margin-right: 0
@@ -68,4 +103,11 @@ body {
 
 .nav-bg {
     background-color: var(--secundario);
+}
+
+.hero {
+    background-image: url(../img/hero.jpg); /* ../ es para regresar un nivl del directorio ya que la carpeta img esta afuera de css */
+    background-repeat: no-repeat; /* Sirve para evitar la repeticion de la imagen cuamd es pequenio*/
+    background-size: cover; /* Sirve para cubrir la imagen con todo el tamanio posible */
+
 }
