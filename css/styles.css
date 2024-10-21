@@ -204,3 +204,50 @@ h1, h2, h3 {
         width: auto; /* Se adapta el boton a la pantalla*/
     }
 }
+
+/* Servicios */ 
+/* Estilos para los seccion de servicios */
+
+/* mq = media query, snipets o atajos */
+@media (min-width: 768px) {
+    .Servicios {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; /*Divide en tres fracciones iguales*/
+        /*grid-template-columns: 33.3% 33.% 33.%; /* Igual se puede poner por porcentajes */
+        grid-template-columns: repeat(3, 1fr);
+        /*(cuantas veces se va a repetir, lo que se va a repetir)*/
+        /* Esta propiedad define el area de las columnas y la funcion repite tres vecces
+        1 fraccion en el grid/rejilla/cuadricula */
+        column-gap: 1rem; /* Poner espacio vacio entre columnas*/
+
+    }
+}
+
+/* centrar iconos*/
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+p {
+    text-align: center;
+    line-height: 2; /*Interlineado */
+}
+
+.iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%; /* Lo hace circular */
+    /* Centrar elementos horizontal y vertical*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Centrar elementos*/
+
+}
